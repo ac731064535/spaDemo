@@ -1,10 +1,10 @@
 # spaDemo
-1.首先安装webpack
-npm install webpack webpack-cli --save-dev
+## 1.首先安装webpack
+### npm install webpack webpack-cli --save-dev
 
 2.安装loader和plugin
-npm install --save-dev style-loader css-loader
-npm install --save-dev html-webpack-plugin
+- npm install --save-dev style-loader css-loader
+- npm install --save-dev html-webpack-plugin
 
 3.安装express及中间容器
 npm install --svae-dev express webpack-dev-middle
