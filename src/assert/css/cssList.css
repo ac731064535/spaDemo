@@ -6,6 +6,13 @@
 .div-autoComplete{
     text-align: center;
     position: relative;
+    display: none;
+}
+.div-tabOption{
+    display: none
+}
+.div-lcCascade{
+    display: none;
 }
 .input-autoComplete{
     width:300px;
@@ -53,5 +60,5 @@
 }
 .div-selectedLc{
     position: absolute;
-    left: 20%;
+    left: 30%;
 }

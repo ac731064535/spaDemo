@@ -1,3 +1,7 @@
+if(module.hot){
+    module.hot.accept();
+}
+
 import {router} from './src/lib/spaRouter';
 import {AutoComplete} from './src/components/autoComplete';
 import {Tab} from './src/components/tabOption';
@@ -5,9 +9,7 @@ import {LcCascade} from './src/components/lcCascade';
 import {llocation} from './src/lib/location';
 import './src/assert/css/cssList.css';
 
-
 window.onload = function () {
-
     //autocomplete输入框
     var input = 'input.input-autoComplete';
     var data = ["java", "javascript", "js", "php", "python", "c++"];
@@ -33,7 +35,7 @@ window.onload = function () {
     var lcOptions = {
         lcList: 'div.div-lcList',
         data: llocation,
-        defaultLocation: ['广东省','广州市','天河区']
+        defaultLocation: ['广东省','深圳市','福田区']
     };
     var lcCas = new LcCascade(lcOptions);
     lcButton.addEventListener('click',function(){
@@ -50,9 +52,9 @@ window.onload = function () {
     var autoDiv = document.querySelector('div.div-autoComplete');
     var tabDiv = document.querySelector('div.div-tabOption');
     var lcCascadeDiv = document.querySelector('div.div-lcCascade');
-    autoDiv.style.display = 'none';
-    tabDiv.style.display = 'none';
-    lcCascadeDiv.style.display = 'none';
+    // autoDiv.style.display = 'none';
+    // tabDiv.style.display = 'none';
+    // lcCascadeDiv.style.display = 'none';
 
     var content = document.querySelector('body');
     function changeBgColor(color){
